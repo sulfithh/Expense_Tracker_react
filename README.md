@@ -1,12 +1,55 @@
-# React + Vite
+#  Expense Tracker Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive expense tracker web application built using **React**, **React Router**, **Bootstrap**, and **Recharts**. It allows users to:
 
-Currently, two official plugins are available:
+- Add, edit, and delete expenses
+- View expenses by category
+- See summary statistics and visual breakdowns (pie chart)
+- Store data in `localStorage` for persistence
+- Switch between "This Month" and "All Time" views
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Features
+
+-  Add expenses with title, amount, category, and date
+-  Filter expenses by category
+-  Dashboard with:
+  - Total spent this month
+  - Category-wise breakdown
+  - Pie chart using `Recharts`
+-  All data is stored locally in browser's `localStorage`
+-  Dark/light mode toggle (planned)
+-  Built with clean navigation using `react-router-dom`
+
+
+
+##  Tech Stack
+
+- React
+- React Router DOM
+- Bootstrap
+- Recharts
+- Zod (for schema validation)
+- UUID (for unique ID generation)
+- LocalStorage 
+
+
+
+##  Project Structure
+
+Expense-Tracker/
+├── public/
+├── src/
+│ ├── Components/
+│ │ ├── AddExpenses.jsx
+│ │ ├── Dashboard.jsx
+│ │ └── Expenses.jsx
+│ ├── Context/
+│ │ └── ExpenseContext.jsx
+│ ├── App.jsx
+│ ├── index.js
+│ └── index.css
+├── package.json
+└── README.md
+
