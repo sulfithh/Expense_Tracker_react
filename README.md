@@ -6,7 +6,7 @@ A responsive expense tracker web application built using **React**, **React Rout
 - View expenses by category
 - See summary statistics and visual breakdowns (pie chart)
 - Store data in `localStorage` for persistence
-- Switch between "This Month" and "All Time" views
+
 
 
 
